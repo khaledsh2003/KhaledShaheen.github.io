@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="New.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        #num {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px;
+            font-size: 50px;
+            text-align: center;
+        }
+        #num2 {
+            text-align: center;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px;
+            font-size: 50px;
+        }
+        button {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px;
+            font-size: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="Banner">
+        <a href="newHOME.html"><img src="/logonew.png" alt=""></a>
+        <h1>Developer Khaled Shaheen Profile</h1>
+    </div>
+    <ul class="navbar">
+        <li><a href="./newHOME.html">Home</a></li>
+        <li><a href="./Resume.html">Resume</a></li>
+        <li><a href="./scd.html">Schedule</a></li>
+        <li><a href="#">Experience/Projects</a></li>
+        <li><a href="./contactme.html">Contact</a></li>
+    </ul>
+    
+
+
+
+
+   
+<input type="text" id="first" >
+<input type="text" id="sec"  >
+<input type="text" id="thr"  >
+<br>
+<input type="text" id="first2"  >
+<input type="text" id="sec2" >
+<input type="text" id="thr2"  >
+<br>
+<input type="text" id="first3"  >
+<input type="text" id="sec3"  >
+<input type="text" id="thr3" >
+
+
+
+<button onclick="randomgenteror()">Done</button>
+<button onclick="clearinput()">Clear Input</button>
+
+
+<script>
+   function check() {
+       let a=document.getElementById('first').value;
+       let b=document.getElementById('sec').value;
+       let c=document.getElementById('thr').value;
+       let d=document.getElementById('first2').value;
+       let e=document.getElementById('sec2').value;
+       let f=document.getElementById('thr2').value;
+       let g=document.getElementById('first3').value;
+       let h=document.getElementById('sec3').value;
+       let i=document.getElementById('thr3').value;
+
+       if(a==b && b==c && a==c && a!='')
+       {
+ 
+          document.getElementById("y").innerHTML=c;
+
+       }
+       else if(d==e && e==f && f==d && d!='')
+       {
+ 
+          document.getElementById("y").innerHTML=d;
+
+       }
+      
+       else if(g==h && h==i && g==i && g!='')
+       {
+ 
+          document.getElementById("y").innerHTML=g;
+
+       }
+       else if(a==d && d==g && a==g && d!='')
+       {
+ 
+          document.getElementById("y").innerHTML=d;
+
+       }
+      
+       else if(b==e && e==h && b==h && e!='')
+       {
+ 
+          document.getElementById("y").innerHTML=e;
+
+       }
+       else if(c==f && f==i && c==i && c!='')
+       {
+ 
+          document.getElementById("y").innerHTML=c;
+
+       }
+       else if(a==e && e==i && a==i && e!='')
+       {
+ 
+          document.getElementById("y").innerHTML=a;
+
+       }
+       else if(g==e && e==c && g==c && c!='')
+       {
+ 
+          document.getElementById("y").innerHTML=c;
+
+       }
+     
+   }
+
+   function clearinput(){
+        const ids=["first","sec","thr","first2","sec2","thr2","first3","sec3","thr3"];
+        for(let x=0;x<ids.length;x++){
+            document.getElementById(ids[x]).value="";
+        }
+        
+    }
+  
+      
+  
+</script>
+<br><br>
+<h1>Winner is Player:</h1>
+<h1 id="y"></h1>
+
+
+
+
+</body>
+</html>

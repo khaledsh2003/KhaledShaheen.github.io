@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+  
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('backnew.png.jpg');
+    color: white;
+}
+
+.Banner{
+    display: flex;
+    background-color: #6CB4EE;
+    height: 100%;
+    overflow: hidden;
+   
+
+}
+.navbar {
+    display: flex;
+    justify-content:flex-end;
+    padding: 30px;
+    
+}
+.navbar li {
+    list-style: none;  
+    
+}
+.navbar a {
+    text-decoration: none;
+    font-weight:bolder;
+    color: white;
+    padding: 30px;
+    
+    
+    
+}
+.navbar a:hover{
+    background-color: #000;
+    color: white;
+}
+.Banner img {
+   width: 70px;
+}
+.Banner h1 {
+   padding: 10px;
+   color: white;  
+}
+.navbar2 {
+    width: 100%;
+    background-color: #6CB4EE;
+    overflow:auto;
+    height: auto;
+    position: relative;
+    bottom: 0;
+     
+}
+.navbar2 img {
+    width: 10%;
+}
+/* Navigation links */
+.navbar2 a {
+float: left;
+color: white;
+text-decoration: none;
+
+width: 33.33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+text-align: center; /* If you want the text to be centered */
+
+}   
+
+/* Add a background color on mouse-over */
+.navbar2 img:hover {
+background-color: wheat;
+}
+
+/* Style the current/active link */
+.navbar2 a.active {
+background-color: #04AA6D;
+}
+.navbar2 p {
+    font-size: 40px;
+    text-align: center;
+}
+section {
+    align-items: center;
+    justify-content: center;
+}
+
